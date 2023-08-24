@@ -7,7 +7,7 @@
 * @val: The value to be pushed onto the stack.
 */
 
-void push_stack(stack_t **top, int val)
+void _push_stack(stack_t **top, int val)
 {
 	stack_t *new_n;
 

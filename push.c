@@ -33,5 +33,5 @@ void _push(stack_t **top, unsigned int line)
 		exit(EXIT_FAILURE);
 	}
 
-		push_stack(top, val);
+		_push_stack(top, val);
 }
