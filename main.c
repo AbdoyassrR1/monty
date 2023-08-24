@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	while ((r = getline(&line, &size, f)) != -1)
 	{
 		line_number++;
-		if (execute(line, line_number, &stack) == 0)
+		if (_execute(line, line_number, &stack) == 0)
 			continue;
 	}
 
