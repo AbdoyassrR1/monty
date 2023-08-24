@@ -20,8 +20,8 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		{"nop", _nop},
 		{"sub", _sub},
 		{"mul", _mul},
-		{"div", stack_div},
-		{"mod", stack_mod},
+		{"div", _stack_div},
+		{"mod", _stack_mod},
 		{NULL, NULL}
 	};
 	int index = 0;
