@@ -1,6 +1,6 @@
 #include "monty.h"
 
-mon_t col = {NULL, NULL, NULL};
+mon_t mon = {NULL, NULL, NULL};
 
 /**
 * main - Entry point of the Monty interpreter
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	file = fopen(argv[1], "r");
-	col.file = file;
+	mon.file = file;
 	if (file == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
