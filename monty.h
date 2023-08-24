@@ -70,5 +70,8 @@ void _push_stack(stack_t **top, int val);
 int _execute(char *line, unsigned int line_num, stack_t **stack);
 void _pop(stack_t **top, unsigned int line);
 void _pint(stack_t **top, unsigned int line)
+void _swap(stack_t **top, unsigned int line);
+void _nop(stack_t **top, unsigned int line);
+
 
 #endif
