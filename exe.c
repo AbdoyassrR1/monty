@@ -16,10 +16,10 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},
-		{"add", add},
+		{"add", _add},
 		{"nop", _nop},
-		{"sub", sub},
-		{"mul", mul},
+		{"sub", _sub},
+		{"mul", _mul},
 		{"div", stack_div},
 		{"mod", stack_mod},
 		{NULL, NULL}
