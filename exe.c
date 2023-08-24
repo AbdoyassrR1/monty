@@ -22,8 +22,7 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		{"mul", _mul},
 		{"div", _stack_div},
 		{"mod", _stack_mod},
-		{"pstr", _pstr},
-		{NULL, NULL}
+		{"pstr", _pstr},{NULL, NULL}
 	};
 	int index = 0;
 	int found = 0;
