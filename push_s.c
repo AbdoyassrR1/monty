@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* push_stack - Pushes a new element onto the stack.
+* _push_stack - Pushes a new element onto the stack.
 *
 * @top: A pointer to the top of the stack.
 * @val: The value to be pushed onto the stack.

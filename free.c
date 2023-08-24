@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* free_stack - Frees all the nodes of a stack.
+* _free_stack - Frees all the nodes of a stack.
 * @stack: ptr to the top of the stack.
 */
 

@@ -34,7 +34,6 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		return (0);
 	}
 	mon.arg = strtok(NULL, " \t\n");
-	/* loop all ops to compare opcode extracted */
 	while (opcodes[index].opcode != NULL && opcode != NULL)
 	{
 		if (strcmp(opcode, opcodes[index].opcode) == 0)
@@ -45,12 +44,10 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		}
 		index++;
 	}
-
 	if (found == 0)
 	{
 		fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);
 		exit(EXIT_FAILURE);
 	}
-
 	return (1);
 }

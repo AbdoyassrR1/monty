@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* nop - does nothing
+* _nop - does nothing
 * @top: double pointer to the top of the stack
 * @line: line number of the opcode
 * Description: This opcode does nothing.
