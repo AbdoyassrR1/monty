@@ -14,7 +14,7 @@ void _push(stack_t **top, unsigned int line)
 	if (mon.arg == NULL || *mon.arg == '\0' || isspace(*mon.arg))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line);
-		free_stack(top);
+		_free_stack(top);
 		free(mon.line);
 		fclose(mon.file);
 		exit(EXIT_FAILURE);
