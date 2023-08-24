@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* execute - Executes an opcode on a stack.
+* _execute - Executes an opcode on a stack.
 * @line: The line containing the opcode to execute.
 * @line_num: The line number of the opcode in the input file.
 * @stack: A pointer to the top of the stack.
@@ -27,6 +27,7 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 	int index = 0;
 	int found = 0;
 	char *opcode;
+
 	opcode = strtok(line, " \t\n");
 	if (!opcode || *opcode == '#' || opcode[0] == '#')
 	{
