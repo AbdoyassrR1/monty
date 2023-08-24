@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* stack_div - Divide the second top element of the stack by the top element.
+* _stack_div - Divide the second top element of the stack by the top element.
 * @top: Double pointer to the top of the stack.
 * @line: Line number of the current operation.
 */
@@ -46,7 +46,7 @@ void _stack_div(stack_t **top, unsigned int line)
 
 
 /**
-* stack_mod- mod the second top element of the stack by the top element.
+* _stack_mod- mod the second top element of the stack by the top element.
 * @top: Double pointer to the top of the stack.
 * @line: Line number of the current operation.
 */

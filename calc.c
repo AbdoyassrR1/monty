@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* add - Add the top two elements of the stack.
+* _add - Add the top two elements of the stack.
 * @top: Double ptr to the top of the stack.
 * @line: Line number of the current operation.
 */
@@ -31,7 +31,7 @@ void _add(stack_t **top, unsigned int line)
 
 
 /**
-* sub - Subtract the top element of the stack from the second top element.
+* _sub - Subtract the top element of the stack from the second top element.
 * @top: Double ptr to the top of the stack.
 * @line: Line number of the current operation.
 */
@@ -59,7 +59,7 @@ void _sub(stack_t **top, unsigned int line)
 }
 
 /**
-* mul - Multiplies the second top element of the stack with the top element
+* _mul - Multiplies the second top element of the stack with the top element
 * @top: Double pointer to the top of the stack
 * @line: Line number being executed from the Monty file
 */
