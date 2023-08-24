@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* swap - swaps the top two elements of the stack
+* _swap - swaps the top two elements of the stack
 * @top: double pointer to the top of the stack
 * @line: line number of the opcode
 * Description: If the stack contains less than two elements, swap.

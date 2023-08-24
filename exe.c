@@ -27,7 +27,6 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 	int index = 0;
 	int found = 0;
 	char *opcode;
-
 	opcode = strtok(line, " \t\n");
 	if (!opcode || *opcode == '#' || opcode[0] == '#')
 	{
