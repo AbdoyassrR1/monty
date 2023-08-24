@@ -59,8 +59,11 @@ typedef struct mon_s
 	char *arg;
 } mon_t;
 
+extern mon_t mon;
 
 
+
+void _push(stack_t **top, unsigned int line);
 
 
 #endif
