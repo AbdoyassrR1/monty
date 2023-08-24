@@ -26,7 +26,7 @@ void _push(stack_t **top, unsigned int line)
 	 val > INT_MAX || val < INT_MIN)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line);
-		free_stack(top);
+		_free_stack(top);
 		free(mon.line);
 		if (mon.file != NULL)
 			fclose(mon.file);
