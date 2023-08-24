@@ -64,6 +64,7 @@ extern mon_t mon;
 
 
 void _push(stack_t **top, unsigned int line);
+void _pall(stack_t **top, unsigned int line);
 
 
 #endif
