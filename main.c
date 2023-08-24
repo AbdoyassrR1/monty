@@ -1,4 +1,5 @@
 #include "monty.h"
+
 mon_t col = {NULL, NULL, NULL};
 
 /**
