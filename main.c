@@ -1,5 +1,4 @@
 #include "monty.h"
-mon_t col = {NULL, NULL, NULL};
 
 /**
 * main - Entry point of the Monty interpreter
@@ -10,6 +9,7 @@ mon_t col = {NULL, NULL, NULL};
 
 int main(int argc, char *argv[])
 {
+	mon_t col = {NULL, NULL, NULL};
 	stack_t *stack = NULL;
 	FILE *file;
 	char *line = NULL;
