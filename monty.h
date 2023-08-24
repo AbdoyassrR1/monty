@@ -79,6 +79,6 @@ void _sub(stack_t **top, unsigned int line);
 void _mul(stack_t **top, unsigned int line);
 void _stack_div(stack_t **top, unsigned int line);
 void _stack_mod(stack_t **top, unsigned int line);
-
+void _pstr(stack_t **top, unsigned int line);
 
 #endif
