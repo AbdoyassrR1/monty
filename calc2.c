@@ -16,7 +16,7 @@ void _stack_div(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: can't div, stack too short\n", line);
 		free(mon.line);
 		fclose(mon.file);
-		free_stack(top);
+		_free_stack(top);
 		exit(EXIT_FAILURE);
 
 	}
@@ -26,7 +26,7 @@ void _stack_div(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: division by zero\n", line);
 		free(mon.line);
 		fclose(mon.file);
-		free_stack(top);
+		_free_stack(top);
 		exit(EXIT_FAILURE);
 
 	}
@@ -60,7 +60,7 @@ void _stack_mod(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: can't mod, stack too short\n", line);
 		free(mon.line);
 		fclose(mon.file);
-		free_stack(top);
+		_free_stack(top);
 		exit(EXIT_FAILURE);
 
 	}
@@ -70,7 +70,7 @@ void _stack_mod(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: division by zero\n", line);
 		free(mon.line);
 		fclose(mon.file);
-		free_stack(top);
+		_free_stack(top);
 		exit(EXIT_FAILURE);
 
 	}
