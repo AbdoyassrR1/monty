@@ -76,7 +76,7 @@ void _mul(stack_t **top, unsigned int line)
 		free(mon.line);
 		exit(EXIT_FAILURE);
 	}
-		if (!is_int((*top)->n) || !is_integer((*top)->next->n))
+		if (!is_int((*top)->n) || !is_int((*top)->next->n))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line);
 		fclose(mon.file);
