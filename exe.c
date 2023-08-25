@@ -19,7 +19,7 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		{"add", _add},
 		{"nop", _nop},
 		{"sub", _sub},
-		{"mul", _mul},
+		{"mul", _mul}, {"pchar", _pchar},
 		{"div", _stack_div}, {"rotl", _rotl},
 		{"mod", _stack_mod}, {"rotr", _rotr},
 		{"pstr", _pstr}, {NULL, NULL}
