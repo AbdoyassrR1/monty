@@ -32,6 +32,12 @@ void _push(stack_t **top, unsigned int line)
 			fclose(mon.file);
 		exit(EXIT_FAILURE);
 	}
-
+	if (mon.fl == 0)
+	{
 		_push_stack(top, val);
+	}
+	else
+	{
+		addqueue(top, val);
+	}
 }
