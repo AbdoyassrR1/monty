@@ -57,6 +57,7 @@ typedef struct mon_s
 	char *line;
 	FILE *file;
 	char *arg;
+	int flag;
 } mon_t;
 
 extern mon_t mon;
@@ -82,5 +83,7 @@ void _pstr(stack_t **top, unsigned int line);
 void _rotr(stack_t **top, __attribute__((unused)) unsigned int line);
 void _rotl(stack_t **top,  __attribute__((unused)) unsigned int line);
 void _pchar(stack_t **top, unsigned int line);
-
+void _stack(stack_t **top, unsigned int line);
+void _queue(stack_t **top, unsigned int line);
+void addqueue(stack_t **top, int n);
 #endif
