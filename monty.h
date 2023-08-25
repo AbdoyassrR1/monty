@@ -57,7 +57,6 @@ typedef struct mon_s
 	char *line;
 	FILE *file;
 	char *arg;
-	int flag;
 } mon_t;
 
 extern mon_t mon;
