@@ -21,7 +21,7 @@ int _execute(char *line, unsigned int line_num, stack_t **stack)
 		{"sub", _sub},
 		{"mul", _mul},
 		{"div", _stack_div},
-		{"mod", _stack_mod},
+		{"mod", _stack_mod}, {"rotr", _rotr},
 		{"pstr", _pstr}, {NULL, NULL}
 	};
 	int index = 0;

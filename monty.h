@@ -63,7 +63,6 @@ extern mon_t mon;
 
 
 
-
 int is_int(int n);
 void _push(stack_t **top, unsigned int line);
 void _pall(stack_t **top, unsigned int line);
@@ -80,5 +79,7 @@ void _mul(stack_t **top, unsigned int line);
 void _stack_div(stack_t **top, unsigned int line);
 void _stack_mod(stack_t **top, unsigned int line);
 void _pstr(stack_t **top, unsigned int line);
+void _rotr(stack_t **top, __attribute__((unused)) unsigned int line);
+
 
 #endif
