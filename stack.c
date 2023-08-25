@@ -2,7 +2,7 @@
 
 /**
  * _stack - prints the top
- * @head: stack head
+ * @top: stack head
  * @line: line_number
  * Return: no return
 */
