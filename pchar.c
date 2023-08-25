@@ -18,7 +18,7 @@ void _pchar(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", line);
 		fclose(mon.file);
 		free(mon.line);
-		free_stack(*top);
+		_free_stack(*top);
 		exit(EXIT_FAILURE);
 	}
 	if (head->n > 127 || head->n < 0)
@@ -26,7 +26,7 @@ void _pchar(stack_t **top, unsigned int line)
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", line);
 		fclose(mon.file);
 		free(mon.line);
-		free_stack(*top);
+		_free_stack(*top);
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", head->n);
