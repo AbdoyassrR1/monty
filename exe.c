@@ -11,22 +11,18 @@
 int _execute(char *line, unsigned int line_num, stack_t **stack)
 {
 	instruction_t opcodes[] = {
-				{"push", _push}, {"pall", _pall}, {"pint", _pint},
-				{"pop", _pop},
-				{"swap", _swap},
-				{"add", _add},
-				{"nop", _nop},
-				{"sub", _sub},
-				{"div", _stack_div},
-				{"mul", _mul},
-				{"mod", _stack_mod},
-				{"pchar", _pchar},
-				{"pstr", _pstr},
-				{"rotl", _rotl},
-				{"rotr", _rotr},
-				{"queue", _queue},
-				{"stack", _stack},
-				{NULL, NULL}
+		{"push", _push},
+		{"pall", _pall},
+		{"pint", _pint},
+		{"pop", _pop},
+		{"swap", _swap},
+		{"add", _add},
+		{"nop", _nop},
+		{"sub", _sub},
+		{"mul", _mul},
+		{"div", _stack_div}, {"rotl", _rotl},
+		{"mod", _stack_mod}, {"rotr", _rotr},
+		{"pstr", _pstr}, {NULL, NULL}
 	};
 	int index = 0;
 	int found = 0;
